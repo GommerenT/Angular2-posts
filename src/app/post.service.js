@@ -13,11 +13,18 @@ var http_1 = require("@angular/common/http");
 var PostService = (function () {
     function PostService(http) {
         this.http = http;
+        this.productsServiceURI = 'http://jsonplaceholder.typicode.com/posts';
     }
     // get all posts
-    PostService.prototype.getAllPosts = function () { };
+    PostService.prototype.getAllPosts = function () {
+        var url = "" + this.productsServiceURI;
+        return this.http.get(url);
+    };
     // get comments based on the index
-    PostService.prototype.getCommentsForPost = function (index) { };
+    PostService.prototype.getCommentsForPost = function (index) {
+        var url = "" + this.productsServiceURI;
+        return this.http.get(url);
+    };
     return PostService;
 }());
 PostService = __decorate([

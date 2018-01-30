@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var post_service_1 = require("./post.service");
 var PostListComponent = (function () {
     function PostListComponent(postService) {
         this.postService = postService;
@@ -28,7 +29,7 @@ PostListComponent = __decorate([
         selector: 'post-list',
         templateUrl: './post-list.component.html'
     }),
-    __metadata("design:paramtypes", [Object])
+    __metadata("design:paramtypes", [post_service_1.PostService])
 ], PostListComponent);
 exports.PostListComponent = PostListComponent;
 //# sourceMappingURL=post-list.component.js.map
