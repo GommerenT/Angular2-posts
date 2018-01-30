@@ -10,7 +10,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
 var http_1 = require("@angular/common/http");
 var appRoutes = [
-    { path: '**', component: PostListComponent }
+    { path: 'list', component: PostListComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
